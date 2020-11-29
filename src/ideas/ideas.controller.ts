@@ -14,7 +14,7 @@ import { IdeaDto } from './dto/idea.dto';
 import { Idea } from './idea.entity';
 import { IdeasService } from './ideas.service';
 
-@Controller('ideas')
+@Controller('api/ideas')
 export class IdeasController {
   private logger = new Logger();
   constructor(private ideaService: IdeasService) {}

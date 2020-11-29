@@ -7,6 +7,7 @@ import { AppService } from './app.service';
 import { IdeasModule } from './ideas/ideas.module';
 import { HttpErrorFilter } from './shared/http-error.filter';
 import { LoggingInterceptor } from './shared/logging.interceptor';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { LoggingInterceptor } from './shared/logging.interceptor';
       entities: ['./../src/**/*.entity.ts', './dist/**/*.entity.js'],
     }),
     IdeasModule,
+    UserModule,
   ],
   controllers: [AppController],
   providers: [
